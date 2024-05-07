@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件下载</title>
+</head>
+<body>
+<div style="margin-bottom: 10px">文件下载列表：</div>
+<table>
+    <tr>
+        <td>123.txt</td>
+        <td><a th:href="@{/download(filename='123.txt')}">下载文件</a></td>
+    </tr>
+
+    <tr>
+        <td>你好.txt</td>
+        <td><a th:href="@{download(filename='你好.txt')}">下载文件</a></td>
+    </tr>
+</table>
+</body>
+</html>
