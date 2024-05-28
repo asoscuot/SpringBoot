@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>注册</title>
+
+    <link rel="shortcut icon" th:href="@{/user/img/bloglogo.jpg}"/>
+    <script th:src="@{/assets/js/jquery.min.js}"></script>
+    <script th:src="@{/assets/js/amazeui.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/assets/css/amazeui.min.css}"/>
+    <link rel="stylesheet" th:href="@{/assets/css/app.css}"/>
+</head>
+
+<body>
+<div class="log">
+    <div class="am-g">
+        <div class="am-u-lg-3 am-u-md-6 am-u-sm-8 am-u-sm-centered log-content">
+            <h1 class="log-title am-animation-slide-top" style="color: black;">~注册~</h1>
+            <br>
+            <form class="am-form" id="registerForm" th:action="@{/register}" method="post" enctype="multipart/form-data">
+
+            <!--用户输入用户名-->
+                <div class="am-input-group am-radius am-animation-slide-left">
+                    <input type="text" class="am-radius" placeholder="用户名" name="username" />
+                    <span class="am-input-group-label log-icon am-radius">
+                        <i class="am-icon-user am-icon-sm am-icon-fw"></i>
+                    </span>
+                </div>
+                <br>
+
+            <!--用户输入密码-->
+                <div class="am-input-group am-animation-slide-left log-animation-delay">
+                    <input type="password" class="am-form-field am-radius log-input" placeholder="密码" name="password" />
+                    <span class="am-input-group-label log-icon am-radius">
+                        <i class="am-icon-lock am-icon-sm am-icon-fw"></i>
+                    </span>
+                </div>
+                <br>
+
+                <!-- 用户输入邮箱 -->
+                <div class="am-input-group am-radius am-animation-slide-left">
+                    <input type="email" class="am-radius" placeholder="邮箱" name="email" />
+                    <span class="am-input-group-label log-icon am-radius">
+                        <i class="am-icon-envelope am-icon-sm am-icon-fw"></i>
+                    </span>
+                </div>
+                <br>
+
+
+                <div class="am-input-group am-animation-slide-left log-animation-delay">
+                    <input type="file" class="am-form-field am-radius log-input" name="avatar" accept="image/*" required/>
+                    <span class="am-input-group-label log-icon am-radius">
+                        <i class="am-icon-picture-o am-icon-sm am-icon-fw"></i>
+                    </span>
+                </div>
+                <br>
+
+
+                <div style="padding-top: 10px;">
+                    <input type="submit" value="注册"
+                           class="am-btn am-btn-primary am-btn-block am-btn-lg am-radius am-animation-slide-bottom log-animation-delay" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
