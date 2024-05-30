@@ -6,6 +6,10 @@ import java.util.Date;
  * 博客评论实体类
  * 1、使用定制的RedisConfig配置类，实现缓存时的JSON序列化机制
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 public class Comment {
     private Integer id;         // 评论id
     private Integer articleId; // 评论的文章id

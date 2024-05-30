@@ -4,6 +4,10 @@ package com.itheima.model.ResponseData;
  * 前端请求响应的封装类
  *
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 public class ArticleResponseData<T> {
     private T payload;        //服务器响应数据
     private boolean success; //请求是否成功

@@ -1,3 +1,5 @@
+<!--作者：梁松涛-->
+<!--version：@1.0-->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -11,7 +13,13 @@
     <script th:src="@{/assets/js/amazeui.min.js}"></script>
     <link rel="stylesheet" th:href="@{/assets/css/amazeui.min.css}"/>
     <link rel="stylesheet" th:href="@{/assets/css/app.css}"/>
-    
+    <script th:inline="javascript">
+        /*<![CDATA[*/
+        function showAlert() {
+            alert('注册成功！请登录。');
+        }
+        /*]]>*/
+    </script>
 </head>
 <body>
 <div class="log">
@@ -59,5 +67,14 @@
         </p>
     </footer>
 </div>
+
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    /* 检查是否需要显示注册成功的弹窗 */
+    if ([[${registerSuccess}]] == true) {
+        showAlert();
+    }
+    /*]]>*/
+</script>
 </body>
 </html>

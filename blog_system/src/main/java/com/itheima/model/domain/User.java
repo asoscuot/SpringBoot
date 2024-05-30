@@ -6,6 +6,11 @@ import java.time.LocalDateTime;
  * @author 梁松涛
  * @version 1.0
  **/
+
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Entity
 @Table(name = "t_user")
 public class User {

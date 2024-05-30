@@ -16,6 +16,10 @@ import java.util.Map;
 /**
  * 文章处理工具类
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 public class MyUtils {
 
      /**

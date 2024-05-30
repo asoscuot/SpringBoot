@@ -11,6 +11,10 @@ import org.springframework.stereotype.Component;
  * @Date 2019-3-14 16:25
  * @Created by CrazyStone
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Component
 public class MailUtils {
     @Autowired

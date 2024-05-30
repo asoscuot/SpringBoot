@@ -9,6 +9,10 @@ import java.util.List;
  * @Date 2019-3-14 9:46
  * @Created by CrazyStone
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 
 public interface IArticleService {
     // 分页查询文章列表

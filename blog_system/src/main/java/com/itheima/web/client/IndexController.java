@@ -24,6 +24,10 @@ import java.util.List;
  * @Date 2019-3-14 9:49
  * @Created by CrazyStone
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Controller
 public class IndexController {
     private static final Logger logger = LoggerFactory.getLogger(IndexController.class);

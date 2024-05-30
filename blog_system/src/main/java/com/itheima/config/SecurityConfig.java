@@ -60,7 +60,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         if(savedRequest !=null){
                             // 如果存在原始拦截路径，登录成功后重定向到原始访问路径
                             httpServletResponse.sendRedirect(savedRequest.getRedirectUrl());
-                        } else if(url != null && !url.equals("")){
+                        } else if(url != null && !url.equals("") && !url.contains("/register")){//确保url不指向注册页面
                             // 跳转到之前所在页面
                             URL fullURL = new URL(url);
                             httpServletResponse.sendRedirect(fullURL.getPath());

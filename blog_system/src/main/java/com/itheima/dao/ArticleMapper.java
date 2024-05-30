@@ -10,6 +10,10 @@ import java.util.List;
  * @Created by CrazyStone
  */
 
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Mapper
 public interface ArticleMapper {
     // 根据id查询文章信息

@@ -3,6 +3,10 @@ package com.itheima.model.domain;
 /**
  * 文章相关动态数据统计实体类
  * */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 public class Statistic {
     private Integer id;
     private Integer articleId;   // 评论的文章id

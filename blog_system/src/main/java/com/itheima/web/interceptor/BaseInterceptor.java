@@ -13,6 +13,11 @@ import javax.servlet.http.HttpServletResponse;
  *  1、使用@Configuration注解声明
  *  2、自定义注册类将自定义的Interceptor拦截器类进行注册使用
  */
+
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Configuration
 public class BaseInterceptor implements HandlerInterceptor {
     @Autowired

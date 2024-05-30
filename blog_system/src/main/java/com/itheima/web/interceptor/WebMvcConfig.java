@@ -11,6 +11,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * @Created by CrazyStone
  */
 
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
+
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
     @Autowired

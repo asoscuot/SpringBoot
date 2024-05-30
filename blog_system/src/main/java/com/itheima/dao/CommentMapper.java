@@ -10,6 +10,10 @@ import java.util.List;
  * @Created by CrazyStone
  */
 
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Mapper
 public interface CommentMapper {
     // 分页展示某个文章的评论

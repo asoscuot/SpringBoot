@@ -11,6 +11,10 @@ import java.util.Date;
 /**
  * 页面数据展示封装类
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
  @Component
 public class Commons {
     /**

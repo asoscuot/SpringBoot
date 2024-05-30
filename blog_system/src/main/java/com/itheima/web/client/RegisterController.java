@@ -1,5 +1,9 @@
 package com.itheima.web.client;
 
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 import com.itheima.model.domain.User;
 import com.itheima.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +23,9 @@ public class RegisterController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;//注入PasswordEncoder
+
     @GetMapping(value = "/register")
     public String showRegisterForm() {
         return "comm/register";
@@ -33,10 +40,10 @@ public class RegisterController {
         // 创建一个新的用户对象
         User user = new User();
         user.setUsername(username);
-        user.setPassword(password);
+        user.setPassword(passwordEncoder.encode(password));//使用密码加密器加密密码
         user.setEmail(email);
         user.setCreatedAt(LocalDateTime.now()); // 设置 createdAt 字段
-        user.setValid(1); // 设置 valid 字段，默认值是 1
+        user.setValid(1); // 设置 valid 字段，虽然默认值应该是 1，但最好还是显式设置
 
         // 处理照片上传
         if (!avatar.isEmpty()) {
@@ -51,5 +58,7 @@ public class RegisterController {
         // 调用 UserService 中的保存用户方法
         userService.saveUser(user);
 
+        //注册成功后重定向到登录界面，添加一个URL参数表示注册成功
+        return "redirect:/login?registerSuccess=true";
     }
 }

@@ -11,6 +11,10 @@ import java.util.List;
  * @Created by CrazyStone
  */
 
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 @Mapper
 public interface StatisticMapper {
     // 新增文章对应的统计信息

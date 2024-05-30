@@ -8,6 +8,10 @@ import com.itheima.model.domain.Comment;
  * @Date 2019-3-14 10:13
  * @Created by CrazyStone
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 public interface ICommentService {
     // 获取文章下的评论
     public PageInfo<Comment> getComments(Integer aid, int page, int count);

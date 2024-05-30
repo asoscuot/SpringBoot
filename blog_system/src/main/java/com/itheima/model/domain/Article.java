@@ -6,6 +6,10 @@ import java.util.Date;
  * 博客文章实体类
  * 1、使用定制的RedisConfig配置类，实现缓存时的JSON序列化机制
  */
+/**
+ * @author 梁松涛
+ * @version 1.0
+ **/
 public class Article {
     private Integer id;          // 文章id
     private String title;       // 文章标题
